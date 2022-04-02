@@ -1,0 +1,20 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "Automation assignment",
+  "author": "Hoang Nguyen",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx codeceptjs run --grep '@pricing' --plugins allure --debug"
+  },
+  "private": true,
+  "dependencies": {
+    "webdriverio": "^7.19.2",
+    "codeceptjs": "^3.3.0"
+  },
+  "devDependencies": {
+    "@codeceptjs/configure": "^0.7.0",
+    "@wdio/selenium-standalone-service": "^7.19.1",
+    "allure-commandline": "^2.13.8"
+  }
+}

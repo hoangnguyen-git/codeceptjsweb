@@ -1,0 +1,17 @@
+{
+  "searchString": "jennife",
+  "pageSize": 150,
+  "pageNumber": 1,
+  "filters": [
+
+  ],
+  "statuses": [
+    "ACTIVE"
+  ],
+  "negativeFilter": false,
+  "externalCompanyIds": [
+
+  ],
+  "exclusivelyByExternalCompanies": true,
+  "jwttoken": "string"
+}
