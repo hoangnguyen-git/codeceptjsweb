@@ -54,8 +54,7 @@ class PricingPage {
                 break;
         }
         await I.scrollToElement(this.fields.noShareholders(locatorId));
-        await I.waitForWebElementVisible(this.fields.noShareholdersValue, time.longWait);
-        await I.waitForWebElementVisible(this.fields.pricePerYearValue);
+        await I.waitAndClick(this.fields.noShareholders('1'))
         await I.waitAndClick(this.fields.noShareholders(locatorId))
     }
 
@@ -63,13 +62,6 @@ class PricingPage {
         await I.seeTextInsideWebElement(noShareholders, this.fields.noShareholdersValue)
         await I.seeTextInsideWebElement(pricePerYear, this.fields.pricePerYearValue)
 
-    }
-    async getNoShareholdersValue() {
-        return await I.getTextElement(this.fields.noShareholdersValue);
-    }
-
-    async getPricePerYearValue() {
-        return await I.getTextElement(this.fields.pricePerYearValue);
     }
 }
 

@@ -1,10 +1,10 @@
 Feature: Sleek Test Cases
 
-  # @pricing
-  # Scenario: Clicking the Pricing link from the Header menu navigates user to the Pricing page
-  #   Given I went to the Sleek SG Home page
-  #   When I click on the "Pricing" link
-  #   Then I should be navigated to the Sleek SG Pricing page
+  @pricing
+  Scenario: Clicking the Pricing link from the Header menu navigates user to the Pricing page
+    Given I went to the Sleek SG Home page
+    When I click on the "Pricing" link
+    Then I should be navigated to the Sleek SG Pricing page
 
   @pricing
   Scenario Outline: Correct corporate secretary details should display after updating accounting progress line
